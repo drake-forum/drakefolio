@@ -134,11 +134,11 @@ document.addEventListener('DOMContentLoaded', function () {
             emailjs.send('drake_email0', 'template_qxmtpb5', formData)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    alert('Your message has been sent successfully!');
+                    alert('🎉 Done! We’ve caught your message.');
                     form.reset(); // Reset the form after successful submission
                 }, function (error) {
                     console.log('FAILED...', error);
-                    alert('Failed to send the message, please try again.');
+                    alert('📡 Signal lost! Please try resending.');
                 });
         });
     }
