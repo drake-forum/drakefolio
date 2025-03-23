@@ -789,8 +789,8 @@ article { display: none; }
 .project-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
-    margin-bottom: 10px;
+    gap: 80px;
+    margin-bottom: 50px;
 }
 
 .project-item { display: none; }
@@ -863,7 +863,14 @@ article { display: none; }
 
     .project-item-icon-box ion-icon { --ionicon-stroke-width: 50px; }
 
-.project-title, .project-category { margin-left: 10px; }
+.project-title, .project-category { 
+    display: block; 
+    margin: 0; 
+    margin-top: 10px; /* Adjusted for better spacing */
+    padding: 0; /* Ensured no padding is applied */
+}
+
+
 
     .project-title {
         color: var(--white2);
